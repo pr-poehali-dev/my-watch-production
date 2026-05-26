@@ -18,6 +18,15 @@ const watches = [
     price: "",
     image: "https://cdn.poehali.dev/projects/5110b0a3-b9e9-4792-b257-04cdcc30b0dc/bucket/3fdf3a6f-201c-4038-b304-fc1a91976af4.jpg",
   },
+  {
+    id: 4,
+    name: "",
+    subtitle: "",
+    description: "",
+    price: "",
+    image: "https://cdn.poehali.dev/projects/5110b0a3-b9e9-4792-b257-04cdcc30b0dc/bucket/1e9d8c7f-4aca-4907-a4b7-a690d048a5ae.jpg",
+    qr: true,
+  },
 ];
 
 export default function Index() {
@@ -205,30 +214,34 @@ export default function Index() {
             <div key={watch.id} className="gallery-item group" style={{ cursor: "none" }}>
               <div className="relative aspect-[3/4] overflow-hidden">
                 <img src={watch.image} alt={watch.name} className="w-full h-full object-cover" />
-                <div
-                  className="absolute inset-0 flex flex-col justify-end p-8 z-10"
-                  style={{ background: "linear-gradient(to top, rgba(10,8,6,0.95) 0%, rgba(10,8,6,0.4) 50%, transparent 100%)" }}
-                >
-                  <p className="section-label mb-2 opacity-70">{watch.subtitle}</p>
-                  <h3 className="font-['Cormorant_Garamond'] text-3xl font-light text-[#E8DCC8] mb-2">{watch.name}</h3>
-                  <p className="text-[#8A7A64] text-xs leading-relaxed mb-4" style={{ fontFamily: "Montserrat" }}>
-                    {watch.description}
-                  </p>
-                  <div className="flex items-center justify-between">
-                    <span className="text-[#C9A84C] font-['Cormorant_Garamond'] text-xl">{watch.price}</span>
-                    <button
-                      className="w-10 h-10 border border-[#C9A84C]/40 flex items-center justify-center group-hover:border-[#C9A84C] transition-colors"
-                      style={{ cursor: "none" }}
-                    >
-                      <Icon name="ArrowRight" size={16} className="text-[#C9A84C]" />
-                    </button>
+                {!watch.qr && (
+                  <div
+                    className="absolute inset-0 flex flex-col justify-end p-8 z-10"
+                    style={{ background: "linear-gradient(to top, rgba(10,8,6,0.95) 0%, rgba(10,8,6,0.4) 50%, transparent 100%)" }}
+                  >
+                    <p className="section-label mb-2 opacity-70">{watch.subtitle}</p>
+                    <h3 className="font-['Cormorant_Garamond'] text-3xl font-light text-[#E8DCC8] mb-2">{watch.name}</h3>
+                    <p className="text-[#8A7A64] text-xs leading-relaxed mb-4" style={{ fontFamily: "Montserrat" }}>
+                      {watch.description}
+                    </p>
+                    <div className="flex items-center justify-between">
+                      <span className="text-[#C9A84C] font-['Cormorant_Garamond'] text-xl">{watch.price}</span>
+                      <button
+                        className="w-10 h-10 border border-[#C9A84C]/40 flex items-center justify-center group-hover:border-[#C9A84C] transition-colors"
+                        style={{ cursor: "none" }}
+                      >
+                        <Icon name="ArrowRight" size={16} className="text-[#C9A84C]" />
+                      </button>
+                    </div>
                   </div>
+                )}
+              </div>
+              {!watch.qr && (
+                <div className="py-4 px-2 flex items-center justify-between border-b border-[#C9A84C]/10">
+                  <span className="font-['Cormorant_Garamond'] text-[#C9A84C]/30 text-4xl font-light">0{i + 1}</span>
+                  <div className="w-12 h-px bg-[#C9A84C]/20 group-hover:bg-[#C9A84C]/60 transition-colors" />
                 </div>
-              </div>
-              <div className="py-4 px-2 flex items-center justify-between border-b border-[#C9A84C]/10">
-                <span className="font-['Cormorant_Garamond'] text-[#C9A84C]/30 text-4xl font-light">0{i + 1}</span>
-                <div className="w-12 h-px bg-[#C9A84C]/20 group-hover:bg-[#C9A84C]/60 transition-colors" />
-              </div>
+              )}
             </div>
           ))}
         </div>
