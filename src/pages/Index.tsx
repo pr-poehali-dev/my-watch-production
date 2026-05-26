@@ -5,9 +5,9 @@ const watches = [
   {
     id: 1,
     name: "Meteorite",
-    subtitle: "Метеорит & Розовое золото",
-    description: "Циферблат из метеоритного железа. Турбийон. Корпус из розового золота.",
-    price: "от 480 000 ₽",
+    subtitle: "Метеорит",
+    description: "Циферблат из метеоритного железа. Турбийон.",
+    price: "749 999 ₽",
     image: "https://cdn.poehali.dev/projects/5110b0a3-b9e9-4792-b257-04cdcc30b0dc/bucket/158e7827-eb2e-4e34-a958-af2365e2668c.jpg",
   },
   {
@@ -15,7 +15,7 @@ const watches = [
     name: "Подарочное издание",
     subtitle: "Эксклюзивная упаковка",
     description: "Фирменная шкатулка из дерева. Часы в стеклянном футляре. Молоточек LUXURUSS в комплекте.",
-    price: "от 390 000 ₽",
+    price: "",
     image: "https://cdn.poehali.dev/projects/5110b0a3-b9e9-4792-b257-04cdcc30b0dc/bucket/3fdf3a6f-201c-4038-b304-fc1a91976af4.jpg",
   },
 ];
