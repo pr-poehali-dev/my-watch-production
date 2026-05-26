@@ -180,8 +180,8 @@ export default function Index() {
           </p>
           <div className="gold-divider my-8 opacity-0 animate-fade-in delay-500" style={{ animationFillMode: "forwards" }} />
           <p
-            className="text-[#8A7A64] text-sm tracking-widest uppercase mb-12 opacity-0 animate-fade-in delay-700"
-            style={{ animationFillMode: "forwards", fontFamily: "Montserrat, sans-serif" }}
+            className="font-['Cormorant_Garamond'] italic text-3xl md:text-5xl text-[#C9A84C] mb-12 opacity-0 animate-fade-in delay-700"
+            style={{ animationFillMode: "forwards" }}
           >
             LUXURUSS — это любовь
           </p>
