@@ -183,7 +183,7 @@ export default function Index() {
             className="text-[#8A7A64] text-sm tracking-widest uppercase mb-12 opacity-0 animate-fade-in delay-700"
             style={{ animationFillMode: "forwards", fontFamily: "Montserrat, sans-serif" }}
           >
-            Каждый механизм — произведение искусства
+            LUXURUSS — это любовь
           </p>
           <div className="opacity-0 animate-fade-in delay-1000" style={{ animationFillMode: "forwards" }}>
             <button className="btn-gold" onClick={() => scrollTo("gallery")}>
