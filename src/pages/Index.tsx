@@ -238,7 +238,7 @@ export default function Index() {
       <section id="about" className="py-32 relative overflow-hidden">
         <div
           className="absolute right-0 top-0 w-1/2 h-full opacity-5"
-          style={{ backgroundImage: `url(${watches[2].image})`, backgroundSize: "cover", backgroundPosition: "center" }}
+          style={{ backgroundImage: `url(${watches[1].image})`, backgroundSize: "cover", backgroundPosition: "center" }}
         />
         <div className="absolute right-0 top-0 w-1/2 h-full bg-gradient-to-r from-[#0A0806] to-transparent" />
 
