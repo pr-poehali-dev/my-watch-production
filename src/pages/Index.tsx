@@ -97,7 +97,7 @@ export default function Index() {
             className="font-['Cormorant_Garamond'] text-xl font-light tracking-[0.3em] text-[#C9A84C] hover:text-[#E8C96C] transition-colors"
             style={{ cursor: "none" }}
           >
-            CHRONOS
+            LUXURUSS
           </button>
 
           <div className="hidden md:flex items-center gap-10">
@@ -170,7 +170,7 @@ export default function Index() {
             className="font-['Cormorant_Garamond'] text-6xl md:text-8xl lg:text-9xl font-light leading-none mb-6 opacity-0 animate-fade-in-up delay-200"
             style={{ animationFillMode: "forwards" }}
           >
-            <span className="gold-shimmer">CHRONOS</span>
+            <span className="gold-shimmer">LUXURUSS</span>
           </h1>
           <p
             className="font-['Cormorant_Garamond'] italic text-2xl md:text-3xl text-[#B8A88A] mb-4 opacity-0 animate-fade-in-up delay-300"
@@ -256,11 +256,11 @@ export default function Index() {
               <p className="section-label mb-4">Наша история</p>
               <h2 className="font-['Cormorant_Garamond'] text-5xl md:text-6xl font-light text-[#E8DCC8] mb-8 leading-tight">
                 О бренде
-                <span className="block italic text-[#C9A84C]">Chronos</span>
+                <span className="block italic text-[#C9A84C]">Luxuruss</span>
               </h2>
               <div className="h-px w-14 bg-gradient-to-r from-[#C9A84C] to-transparent mb-10" />
               <p className="text-[#8A7A64] leading-[2] mb-6 text-sm" style={{ fontFamily: "Montserrat, sans-serif" }}>
-                Каждые часы CHRONOS рождаются в руках мастера. Мы создаём исключительные механизмы,
+                Каждые часы LUXURUSS рождаются в руках мастера. Мы создаём исключительные механизмы,
                 которые становятся наследием — передаются из поколения в поколение.
               </p>
               <p className="text-[#8A7A64] leading-[2] mb-10 text-sm" style={{ fontFamily: "Montserrat, sans-serif" }}>
@@ -366,9 +366,9 @@ export default function Index() {
       {/* Footer */}
       <footer className="border-t border-[#C9A84C]/10 py-10 px-8">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-4">
-          <span className="font-['Cormorant_Garamond'] text-lg tracking-[0.3em] text-[#C9A84C]/60">CHRONOS</span>
+          <span className="font-['Cormorant_Garamond'] text-lg tracking-[0.3em] text-[#C9A84C]/60">LUXURUSS</span>
           <p className="text-[#8A7A64]/50 text-[0.6rem] tracking-widest uppercase" style={{ fontFamily: "Montserrat, sans-serif" }}>
-            © 2024 Chronos. Все права защищены.
+            © 2024 Luxuruss. Все права защищены.
           </p>
           <div className="flex items-center gap-6">
             <button className="nav-link" style={{ cursor: "none" }}>Инстаграм</button>
