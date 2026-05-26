@@ -11,14 +11,6 @@ const watches = [
     image: "https://cdn.poehali.dev/projects/5110b0a3-b9e9-4792-b257-04cdcc30b0dc/bucket/158e7827-eb2e-4e34-a958-af2365e2668c.jpg",
   },
   {
-    id: 2,
-    name: "Golden Laza",
-    subtitle: "Малахит & Розовое золото",
-    description: "Циферблат из натурального малахита. Турбийон. Знаки зодиака на циферблате.",
-    price: "от 620 000 ₽",
-    image: "https://cdn.poehali.dev/projects/5110b0a3-b9e9-4792-b257-04cdcc30b0dc/bucket/5079b291-e5cd-4fb0-88ce-568d5862b54e.jpg",
-  },
-  {
     id: 3,
     name: "Подарочное издание",
     subtitle: "Эксклюзивная упаковка",
@@ -208,7 +200,7 @@ export default function Index() {
           <div className="gold-divider" />
         </div>
 
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-1">
+        <div className="grid grid-cols-1 md:grid-cols-2 gap-1 max-w-4xl mx-auto">
           {watches.map((watch, i) => (
             <div key={watch.id} className="gallery-item group" style={{ cursor: "none" }}>
               <div className="relative aspect-[3/4] overflow-hidden">
