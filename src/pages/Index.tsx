@@ -94,8 +94,8 @@ export default function Index() {
         <div className="max-w-7xl mx-auto px-8 py-6 flex items-center justify-between">
           <button
             onClick={() => scrollTo("home")}
-            className="font-['Cormorant_Garamond'] text-xl font-light tracking-[0.3em] text-[#C9A84C] hover:text-[#E8C96C] transition-colors"
-            style={{ cursor: "none" }}
+            className="text-xl tracking-[0.3em] text-[#C9A84C] hover:text-[#E8C96C] transition-colors"
+            style={{ fontFamily: "'Arial Black', Arial, sans-serif", cursor: "none" }}
           >
             LUXURUSS
           </button>
@@ -167,8 +167,8 @@ export default function Index() {
             Ручное производство · Россия
           </p>
           <h1
-            className="font-['Cormorant_Garamond'] text-6xl md:text-8xl lg:text-9xl font-light leading-none mb-6 opacity-0 animate-fade-in-up delay-200"
-            style={{ animationFillMode: "forwards" }}
+            className="text-6xl md:text-8xl lg:text-9xl leading-none mb-6 opacity-0 animate-fade-in-up delay-200"
+            style={{ animationFillMode: "forwards", fontFamily: "'Arial Black', Arial, sans-serif" }}
           >
             <span className="gold-shimmer">LUXURUSS</span>
           </h1>
