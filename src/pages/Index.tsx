@@ -212,8 +212,8 @@ export default function Index() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-1 max-w-4xl mx-auto">
           {watches.map((watch, i) => (
             <div key={watch.id} className="gallery-item group" style={{ cursor: "none" }}>
-              <div className="relative aspect-[3/4] overflow-hidden">
-                <img src={watch.image} alt={watch.name} className="w-full h-full object-cover" />
+              <div className={`relative overflow-hidden ${watch.qr ? "aspect-[3/4] bg-white flex items-center justify-center" : "aspect-[3/4]"}`}>
+                <img src={watch.image} alt={watch.name} className={watch.qr ? "w-48 h-48 object-contain" : "w-full h-full object-cover"} />
                 {!watch.qr && (
                   <div
                     className="absolute inset-0 flex flex-col justify-end p-8 z-10"
